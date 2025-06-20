@@ -7,6 +7,7 @@ import FairyStats from './components/FairyStats';
 import FairyTimeline from './components/FairyTimeline';
 import FairyMagicMessage from './components/FairyMagicMessage';
 import FairyCatMessage from './components/FairyCatMessage';
+import FairyAvatar from './components/FairyAvatar';
 
 // PUBLIC_INTERFACE
 function App() {
@@ -55,6 +56,7 @@ function App() {
     <div className="fairy-app fairy-bg">
       <nav className="fairy-navbar">
         <span className="fairy-logo">
+          <FairyAvatar size={54} style={{ marginRight: 16, marginLeft: -14 }} />
           <span className="star" role="img" aria-label="magic">🪄</span> FairyFinance & MagicReports
         </span>
       </nav>
