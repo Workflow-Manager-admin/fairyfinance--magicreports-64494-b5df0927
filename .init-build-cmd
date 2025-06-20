@@ -1,0 +1,4 @@
+{
+    "command": "npm install && npx tsc --noEmit && npm test -- --ci",
+    "working_directory": "/home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports"
+}
