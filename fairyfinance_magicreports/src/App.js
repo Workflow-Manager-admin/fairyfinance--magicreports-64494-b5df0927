@@ -5,6 +5,7 @@ import FairyLedger from './components/FairyLedger';
 import FairyCharts from './components/FairyCharts';
 import FairyStats from './components/FairyStats';
 import FairyTimeline from './components/FairyTimeline';
+import FairyMagicMessage from './components/FairyMagicMessage';
 
 // PUBLIC_INTERFACE
 function App() {
@@ -57,6 +58,9 @@ function App() {
         </span>
       </nav>
       <main className="fairy-main">
+        <section className="fairy-section" style={{paddingTop: 8}}>
+          <FairyMagicMessage />
+        </section>
         <section className="fairy-section">
           <h1 className="fairy-title">
             Welcome to the Tooth Fairy's Ledger!
