@@ -9,6 +9,7 @@ import FairyMagicMessage from './components/FairyMagicMessage';
 import FairyCatMessage from './components/FairyCatMessage';
 import FairyAvatar from './components/FairyAvatar';
 import FairyGifMagic from './components/FairyGifMagic';
+import FairyPushNotification from './components/FairyPushNotification';
 
 // PUBLIC_INTERFACE
 function App() {
@@ -62,6 +63,10 @@ function App() {
         </span>
       </nav>
       <main className="fairy-main">
+        {/* Fairy Push Notifications */}
+        <section className="fairy-section" style={{paddingTop: 8}}>
+          <FairyPushNotification />
+        </section>
         <section className="fairy-section" style={{paddingTop: 8}}>
           <FairyMagicMessage />
         </section>

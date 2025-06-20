@@ -43,6 +43,24 @@ Launches the test runner in interactive watch mode.
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
+## Push Notifications (OneSignal Web SDK Integration)
+
+This app can send browser push notifications using [OneSignal](https://onesignal.com/).
+
+### How to Enable OneSignal Push
+
+1. **Register** at [onesignal.com](https://onesignal.com/) and create a new app (Web Push).
+2. Copy your App ID from the OneSignal dashboard.
+3. Add the following to your `.env` file in the `fairyfinance_magicreports/` directory:
+
+    ```
+    REACT_APP_ONESIGNAL_APP_ID=your-onesignal-app-id-here
+    ```
+
+4. Restart the dev server (`npm start`).
+
+For local development: Push notification requests will work on `localhost` for most desktop browsers, but to deliver push in production you must deploy from an HTTPS domain. Test "Demo Notification" from your app header when enabled!
+
 ## Customization
 
 ### Colors
