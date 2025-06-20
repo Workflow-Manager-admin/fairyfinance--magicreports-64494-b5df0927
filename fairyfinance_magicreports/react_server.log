@@ -7,202 +7,20 @@
 <i> [webpack-dev-server] On Your Network (IPv4): http://172.17.0.2:3000/
 <i> [webpack-dev-server] Content not from webpack is served from './public' directory
 Injecting EditorRootWrapper import: ../.ve/EditorRootWrapper
-asset bundle.js 1.39 MiB [emitted] (name: main)
+asset bundle.js 1.42 MiB [emitted] (name: main)
 asset index.html 1.98 KiB [emitted]
 runtime modules 27.5 KiB 14 modules
 modules by path ./node_modules/ 1.24 MiB 31 modules
-modules by path ./src/ 10.3 KiB
-  modules by path ./src/*.css 7.49 KiB 4 modules
-  modules by path ./src/*.js 2.76 KiB
+modules by path ./src/ 32.2 KiB
+  modules by path ./src/*.css 12 KiB 4 modules
+  modules by path ./src/components/*.js 15.2 KiB 4 modules
+  modules by path ./src/*.js 4.96 KiB
     ./src/index.js 530 bytes [built] [code generated]
-    ./src/App.js 2.25 KiB [built] [code generated]
+    ./src/App.js 4.44 KiB [built] [code generated]
 modules by path ./.ve/ 15.1 KiB
   modules by path ./.ve/*.js 10.6 KiB 2 modules
   modules by path ./.ve/*.css 2.93 KiB
     ./.ve/EditorOverlay.css 2.25 KiB [built] [code generated]
     ./node_modules/css-loader/dist/cjs.js!./.ve/EditorOverlay.css 697 bytes [built] [code generated]
   ./.ve/EditorOverlay.jsx 1.58 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 1357 ms
-assets by status 1.98 KiB [cached] 1 asset
-assets by path *.js 1.4 MiB
-  asset bundle.js 1.4 MiB [emitted] (name: main)
-  asset main.b465f9b183bea3752d00.hot-update.js 8.32 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.b465f9b183bea3752d00.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.4 MiB = bundle.js 1.4 MiB main.b465f9b183bea3752d00.hot-update.js 8.32 KiB
-cached modules 1.26 MiB [cached] 41 modules
-runtime modules 27.5 KiB 14 modules
-./src/App.js 4.44 KiB [built] [code generated]
-
-ERROR in ./src/App.js 3:0-57
-Module not found: Error: Can't resolve './components/FairyInputForm' in '/home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/src'
- @ ./src/index.js 5:0-24 11:32-35
-
-ERROR in ./src/App.js 4:0-51
-Module not found: Error: Can't resolve './components/FairyLedger' in '/home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/src'
- @ ./src/index.js 5:0-24 11:32-35
-
-ERROR in ./src/App.js 5:0-51
-Module not found: Error: Can't resolve './components/FairyCharts' in '/home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/src'
- @ ./src/index.js 5:0-24 11:32-35
-
-ERROR in ./src/App.js 6:0-49
-Module not found: Error: Can't resolve './components/FairyStats' in '/home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/src'
- @ ./src/index.js 5:0-24 11:32-35
-
-4 errors have detailed information that is not shown.
-Use 'stats.errorDetails: true' resp. '--stats-error-details' to show it.
-
-webpack 5.99.9 compiled with 4 errors in 96 ms
-assets by status 1.98 KiB [cached] 1 asset
-assets by path *.js 1.41 MiB
-  asset bundle.js 1.4 MiB [emitted] (name: main)
-  asset main.548218387702d32821b9.hot-update.js 13.7 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.548218387702d32821b9.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.41 MiB = bundle.js 1.4 MiB main.548218387702d32821b9.hot-update.js 13.7 KiB
-cached modules 1.26 MiB [cached] 41 modules
-runtime modules 27.5 KiB 14 modules
-javascript modules 7.97 KiB
-  ./src/App.js 4.44 KiB [code generated]
-  ./src/components/FairyInputForm.js 3.53 KiB [built] [code generated]
-
-ERROR in ./src/App.js 4:0-51
-Module not found: Error: Can't resolve './components/FairyLedger' in '/home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/src'
- @ ./src/index.js 5:0-24 11:32-35
-
-ERROR in ./src/App.js 5:0-51
-Module not found: Error: Can't resolve './components/FairyCharts' in '/home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/src'
- @ ./src/index.js 5:0-24 11:32-35
-
-ERROR in ./src/App.js 6:0-49
-Module not found: Error: Can't resolve './components/FairyStats' in '/home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/src'
- @ ./src/index.js 5:0-24 11:32-35
-
-3 errors have detailed information that is not shown.
-Use 'stats.errorDetails: true' resp. '--stats-error-details' to show it.
-
-webpack 5.99.9 compiled with 3 errors in 75 ms
-assets by status 1.98 KiB [cached] 1 asset
-assets by path *.js 1.42 MiB
-  asset bundle.js 1.41 MiB [emitted] (name: main)
-  asset main.de3fd47347edefb71eac.hot-update.js 13.9 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.de3fd47347edefb71eac.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.42 MiB = bundle.js 1.41 MiB main.de3fd47347edefb71eac.hot-update.js 13.9 KiB
-cached modules 1.27 MiB [cached] 42 modules
-runtime modules 27.5 KiB 14 modules
-javascript modules 7.92 KiB
-  ./src/App.js 4.44 KiB [code generated]
-  ./src/components/FairyLedger.js 3.48 KiB [built] [code generated]
-
-ERROR in ./src/App.js 5:0-51
-Module not found: Error: Can't resolve './components/FairyCharts' in '/home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/src'
-resolve './components/FairyCharts' in '/home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/src'
-  using description file: /home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/package.json (relative path: ./src)
-    Field 'browser' doesn't contain a valid alias configuration
-    using description file: /home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/package.json (relative path: ./src/components/FairyCharts)
-      no extension
-        Field 'browser' doesn't contain a valid alias configuration
-        /home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/src/components/FairyCharts doesn't exist
-      .js
-        Field 'browser' doesn't contain a valid alias configuration
-        /home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/src/components/FairyCharts.js doesn't exist
-      .jsx
-        Field 'browser' doesn't contain a valid alias configuration
-        /home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/src/components/FairyCharts.jsx doesn't exist
-      as directory
-        /home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/src/components/FairyCharts doesn't exist
- @ ./src/index.js 5:0-24 11:32-35
-
-ERROR in ./src/App.js 6:0-49
-Module not found: Error: Can't resolve './components/FairyStats' in '/home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/src'
-resolve './components/FairyStats' in '/home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/src'
-  using description file: /home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/package.json (relative path: ./src)
-    Field 'browser' doesn't contain a valid alias configuration
-    using description file: /home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/package.json (relative path: ./src/components/FairyStats)
-      no extension
-        Field 'browser' doesn't contain a valid alias configuration
-        /home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/src/components/FairyStats doesn't exist
-      .js
-        Field 'browser' doesn't contain a valid alias configuration
-        /home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/src/components/FairyStats.js doesn't exist
-      .jsx
-        Field 'browser' doesn't contain a valid alias configuration
-        /home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/src/components/FairyStats.jsx doesn't exist
-      as directory
-        /home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/src/components/FairyStats doesn't exist
- @ ./src/index.js 5:0-24 11:32-35
-
-webpack 5.99.9 compiled with 2 errors in 69 ms
-assets by status 1.98 KiB [cached] 1 asset
-assets by path *.js 1.43 MiB
-  asset bundle.js 1.41 MiB [emitted] (name: main)
-  asset main.5bf4096e254ba2ee15df.hot-update.js 14.3 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.5bf4096e254ba2ee15df.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.43 MiB = bundle.js 1.41 MiB main.5bf4096e254ba2ee15df.hot-update.js 14.3 KiB
-cached modules 1.27 MiB [cached] 43 modules
-runtime modules 27.5 KiB 14 modules
-javascript modules 8.69 KiB
-  ./src/App.js 4.44 KiB [code generated]
-  ./src/components/FairyCharts.js 4.25 KiB [built] [code generated]
-
-ERROR in ./src/App.js 6:0-49
-Module not found: Error: Can't resolve './components/FairyStats' in '/home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/src'
-resolve './components/FairyStats' in '/home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/src'
-  using description file: /home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/package.json (relative path: ./src)
-    Field 'browser' doesn't contain a valid alias configuration
-    using description file: /home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/package.json (relative path: ./src/components/FairyStats)
-      no extension
-        Field 'browser' doesn't contain a valid alias configuration
-        /home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/src/components/FairyStats doesn't exist
-      .js
-        Field 'browser' doesn't contain a valid alias configuration
-        /home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/src/components/FairyStats.js doesn't exist
-      .jsx
-        Field 'browser' doesn't contain a valid alias configuration
-        /home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/src/components/FairyStats.jsx doesn't exist
-      as directory
-        /home/kavia/workspace/code-generation/fairyfinance--magicreports-64494-b5df0927/fairyfinance_magicreports/src/components/FairyStats doesn't exist
- @ ./src/index.js 5:0-24 11:32-35
-
-webpack 5.99.9 compiled with 1 error in 82 ms
-assets by status 1.98 KiB [cached] 1 asset
-assets by path *.js 1.43 MiB
-  asset bundle.js 1.42 MiB [emitted] (name: main)
-  asset main.135ea56ac089a639a399.hot-update.js 14.3 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.135ea56ac089a639a399.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.43 MiB = bundle.js 1.42 MiB main.135ea56ac089a639a399.hot-update.js 14.3 KiB
-cached modules 1.27 MiB [cached] 44 modules
-runtime modules 27.5 KiB 14 modules
-javascript modules 8.42 KiB
-  ./src/App.js 4.44 KiB [code generated]
-  ./src/components/FairyStats.js 3.98 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 48 ms
-assets by status 1.98 KiB [cached] 1 asset
-assets by path *.js 1.42 MiB
-  asset bundle.js 1.42 MiB [emitted] (name: main)
-  asset main.340a443f150e0aebfa8d.hot-update.js 4.75 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.340a443f150e0aebfa8d.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.42 MiB = bundle.js 1.42 MiB main.340a443f150e0aebfa8d.hot-update.js 4.75 KiB
-cached modules 1.28 MiB [cached] 45 modules
-runtime modules 27.5 KiB 14 modules
-./node_modules/css-loader/dist/cjs.js!./src/App.css 2.29 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 37 ms
-assets by status 1.98 KiB [cached] 1 asset
-assets by path *.js 1.42 MiB
-  asset bundle.js 1.42 MiB [emitted] (name: main)
-  asset main.e6a7841ae86257debb21.hot-update.js 4.84 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.e6a7841ae86257debb21.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.42 MiB = bundle.js 1.42 MiB main.e6a7841ae86257debb21.hot-update.js 4.84 KiB
-cached modules 1.28 MiB [cached] 45 modules
-runtime modules 27.5 KiB 14 modules
-./node_modules/css-loader/dist/cjs.js!./src/App.css 2.37 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 33 ms
-assets by status 1.98 KiB [cached] 1 asset
-assets by path *.js 1.43 MiB
-  asset bundle.js 1.42 MiB [emitted] (name: main)
-  asset main.ad06535a13d4add10936.hot-update.js 9.39 KiB [emitted] [immutable] [hmr] (name: main)
-asset main.ad06535a13d4add10936.hot-update.json 28 bytes [emitted] [immutable] [hmr]
-Entrypoint main 1.43 MiB = bundle.js 1.42 MiB main.ad06535a13d4add10936.hot-update.js 9.39 KiB
-cached modules 1.28 MiB [cached] 45 modules
-runtime modules 27.5 KiB 14 modules
-./node_modules/css-loader/dist/cjs.js!./src/App.css 6.71 KiB [built] [code generated]
-webpack 5.99.9 compiled successfully in 59 ms
+webpack 5.99.9 compiled successfully in 1553 ms
