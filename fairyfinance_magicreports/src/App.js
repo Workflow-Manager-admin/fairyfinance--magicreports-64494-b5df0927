@@ -8,6 +8,7 @@ import FairyTimeline from './components/FairyTimeline';
 import FairyMagicMessage from './components/FairyMagicMessage';
 import FairyCatMessage from './components/FairyCatMessage';
 import FairyAvatar from './components/FairyAvatar';
+import FairyGifMagic from './components/FairyGifMagic';
 
 // PUBLIC_INTERFACE
 function App() {
@@ -66,6 +67,10 @@ function App() {
         </section>
         <section className="fairy-section" style={{paddingTop: 2}}>
           <FairyCatMessage />
+        </section>
+        <section className="fairy-section">
+          {/* 🌸 Fairy GIF Magic */}
+          <FairyGifMagic />
         </section>
         <section className="fairy-section">
           <h1 className="fairy-title">

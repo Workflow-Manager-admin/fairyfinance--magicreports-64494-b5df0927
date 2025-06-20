@@ -9,3 +9,4 @@ export { default as FairyMagicMessage } from './FairyMagicMessage';
 export { default as FairyCatMessage } from './FairyCatMessage';
 export { default as FairyAvatar } from './FairyAvatar';
 export { default as FairyQuickChart } from './FairyQuickChart';
+export { default as FairyGifMagic } from './FairyGifMagic';
