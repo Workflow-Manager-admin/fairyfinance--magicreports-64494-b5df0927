@@ -6,3 +6,4 @@ export { default as FairyCharts } from './FairyCharts';
 export { default as FairyStats } from './FairyStats';
 export { default as FairyTimeline } from './FairyTimeline';
 export { default as FairyMagicMessage } from './FairyMagicMessage';
+export { default as FairyCatMessage } from './FairyCatMessage';

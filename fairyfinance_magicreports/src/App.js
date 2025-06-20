@@ -61,6 +61,9 @@ function App() {
         <section className="fairy-section" style={{paddingTop: 8}}>
           <FairyMagicMessage />
         </section>
+        <section className="fairy-section" style={{paddingTop: 2}}>
+          <FairyCatMessage />
+        </section>
         <section className="fairy-section">
           <h1 className="fairy-title">
             Welcome to the Tooth Fairy's Ledger!
