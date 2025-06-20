@@ -6,6 +6,7 @@ import FairyCharts from './components/FairyCharts';
 import FairyStats from './components/FairyStats';
 import FairyTimeline from './components/FairyTimeline';
 import FairyMagicMessage from './components/FairyMagicMessage';
+import FairyCatMessage from './components/FairyCatMessage';
 
 // PUBLIC_INTERFACE
 function App() {
