@@ -1,4 +1,5 @@
 import React from 'react';
+import FairyQuickChart from './FairyQuickChart';
 
 // Draw a simple SVG line chart for earnings over timeline
 function FairyCharts({ records, reportData }) {
@@ -84,6 +85,10 @@ function FairyCharts({ records, reportData }) {
           </svg>
         </div>
       </div>
+      {/* QuickChart.io - Live Updating FairyChart */}
+      {reportData && reportData.earningsTimeline && reportData.earningsTimeline.length > 0 && (
+        <FairyQuickChart earningsTimeline={reportData.earningsTimeline} />
+      )}
     </div>
   );
 }
