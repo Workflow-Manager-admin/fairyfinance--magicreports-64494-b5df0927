@@ -4,6 +4,7 @@ import FairyInputForm from './components/FairyInputForm';
 import FairyLedger from './components/FairyLedger';
 import FairyCharts from './components/FairyCharts';
 import FairyStats from './components/FairyStats';
+import FairyTimeline from './components/FairyTimeline';
 
 // PUBLIC_INTERFACE
 function App() {
@@ -64,6 +65,9 @@ function App() {
             Discover a magical way to track teeth lost, fairy earnings, and legendary stats. Enter your fairy-history to reveal whimsical reports!
           </p>
           <FairyInputForm onAddRecord={handleAddRecord} />
+        </section>
+        <section className="fairy-section">
+          <FairyTimeline records={records} />
         </section>
         <section className="fairy-section">
           <FairyLedger records={records} />

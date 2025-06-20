@@ -267,6 +267,198 @@ body {
   font-size: 1.13rem;
 }
 
+/* FairyTimeline Styles */
+.fairy-timeline {
+  background: linear-gradient(101deg, #fffaf6 90%, #ffebfa 100%);
+  margin-top: 40px;
+  box-shadow: 0 4px 24px #b391f205, 0 1px 12px #fbf1f833;
+}
+.fairy-timeline-bar {
+  position: relative;
+  min-height: 90px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin: 40px 0 20px 0;
+  padding-bottom: 20px;
+  overflow-x: auto;
+  overflow-y: visible;
+}
+.fairy-timeline-entry {
+  position: relative;
+  min-width: 68px;
+  outline: none;
+  border-radius: 28px;
+  transition: box-shadow 0.16s, background 0.12s;
+  cursor: pointer;
+  z-index: 2;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.fairy-timeline-entry:hover, .fairy-timeline-entry:focus {
+  background: linear-gradient(120deg,#ffebfa 65%, #ffd70017 100%);
+  box-shadow: 0 4px 18px #ffd70022, 0 0px 20px #ffd9fa55;
+}
+.fairy-timeline-icon {
+  font-size: 2.0rem;
+  color: #ffd700;
+  position: relative;
+  margin-bottom: 0.12em;
+  line-height: 1.0;
+  margin-top: 3px;
+  display: flex;
+  gap: 0.15em;
+  align-items: center;
+  justify-content: center;
+}
+.fairy-timeline-dot {
+  width: 13px;
+  height: 13px;
+  background: #fffbe7;
+  border: 3.5px solid #ffd700a9;
+  border-radius: 50%;
+  margin: 0.13em auto;
+  box-shadow: 0 2px 8px #ffd70070;
+}
+.fairy-timeline-date {
+  color: var(--accent);
+  font-size: 0.99rem;
+  margin-top: 7px;
+  font-weight: 500;
+  text-shadow: 0 0 6px #ffd70010;
+  background: #fffdfa;
+  border-radius: 9px;
+  padding: 1.5px 7px;
+  border: 1px dotted #ffd70044;
+  box-shadow: 0 1px 1px #ffd70012 inset;
+}
+
+.fairy-timeline-line {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 37px;
+  height: 4px;
+  z-index: 1;
+  background: linear-gradient(90deg, #ffd70044 0%, #e5dfff 80%);
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.fairy-timeline-entry.open {
+  z-index: 22;
+  background: linear-gradient(114deg, #fff8fc 85%, #ffd70013 100%);
+  box-shadow: 0 4px 40px #ffb9f442, 0 1px 15px #f7cff933, 0 2px 10px #ffd70044;
+}
+
+.fairy-timeline-modal {
+  position: absolute;
+  top: -205px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  background: linear-gradient(123deg, #fff8ee 70%, #f7d6ffdd 100%);
+  border-radius: 24px;
+  padding: 22px 17px 14px 17px;
+  box-shadow: 0 5px 35px #ff69b468, 0 2px 60px #ffd70041;
+  border: 2.1px solid #ffbcfe57;
+  animation: fadeInTimelineModal 0.31s cubic-bezier( 0.68, -0.55, 0.27, 1.55 );
+  min-height: 150px;
+}
+
+@keyframes fadeInTimelineModal {
+  from { opacity: 0; transform: translateX(-50%) scale(0.95);}
+  to { opacity: 1; transform: translateX(-50%) scale(1);}
+}
+.fairy-timeline-modal::after {
+  content: "";
+  position: absolute;
+  bottom: -22px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 28px;
+  background: radial-gradient(ellipse at center, #fff8eecc 70%, transparent 100%);
+  z-index: 1;
+}
+
+.fairy-timeline-modal-header {
+  font-size: 1.15rem;
+  text-align: center;
+  color: var(--secondary);
+  font-weight: bold;
+  margin-bottom: 13px;
+  letter-spacing: 1px;
+}
+.fairy-timeline-modal-body {
+  font-size: 1.02rem;
+  color: var(--accent);
+  margin-bottom: 12px;
+  text-align: left;
+  padding-left: 7px;
+  font-family: 'Comic Sans MS', cursive;
+  line-height: 1.55;
+}
+.fairy-timeline-close {
+  display: block;
+  margin: 7px auto 0 auto;
+  font-size: 1.03rem;
+  border-radius: 10px;
+  padding: 4px 19px;
+  background: linear-gradient(90deg, #ff69b4 70%, #ffd700 100%);
+  box-shadow: 0 2px 8px #ffd70040;
+}
+.fairy-timeline-empty {
+  color: var(--secondary);
+  text-align: center;
+  font-size: 1.1rem;
+  background: #f8f2ff;
+  padding: 36px 0;
+}
+
+.fairy-quote {
+  color: #8a2be2;
+  background: #fff0fa;
+  border-radius: 13px;
+  padding: 7px 14px;
+  font-family: 'Comic Sans MS', cursive;
+  font-size: 1.04rem;
+  font-weight: 500;
+  box-shadow: 0 1px 7px #b375c233;
+  margin: 3px 0 2px 0;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.timeline-label {
+  font-weight: bold;
+  color: #ff69b4;
+  margin-right: 7px;
+}
+
+.sparkle {
+  font-size: 1rem;
+  color: #ffbcfe;
+  filter: drop-shadow(0 0 2px #ffd70099);
+  margin-left: -6px;
+}
+
+@media (max-width: 700px) {
+  .fairy-timeline-bar {
+    gap: 9px;
+    font-size: 0.89em;
+  }
+  .fairy-timeline-modal {
+    width: 92vw;
+    min-width: 0;
+    left: 50%;
+  }
+}
+
 @media (max-width: 1050px) {
   .fairy-section {
     max-width: 97vw;
